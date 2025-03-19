@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css"/>
+
+    <title>Inscription</title>
+</head>
+<body>
+    <div id="inscription-page">
+        <h1>Inscription</h1>
+        <p>Inscrivez-vous pour commencer le quiz</p>
+
+        <form id="inscriptionForm" action="http://localhost/GreenITQuizz/ProjetQuizz/register.php" method="POST">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text"  name="username" placeholder="Entrez votre nom d'utilisateur" required>
+            <br>
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" placeholder="Entrez votre mot de passe" required>
+            <br>
+            <button type="submit" id="inscription-btn" >S'inscrire</button>
+        </form>
+        <p>Déjà inscrit ? <a id="a" href="login.html">Connectez-vous ici</a>.</p>
+    </div>
+</body>
+</html>

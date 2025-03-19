@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css"/>
+
+    <title>Question 1</title>
+</head>
+<body>
+    <div id="question-page">
+        <h1>Question 1</h1>
+        <p>Qu'est-ce que le Green IT ?</p>
+        <form action="http://localhost/GreenITQuizz/ProjetQuizz/feedback.php" method="POST">
+                <input type="hidden" name="question" value="1">
+                <label><input type="radio" name="answer" value="1" required> Un logiciel</label><br>
+                <label><input type="radio" name="answer" value="2"> Une démarche environnementale</label><br>
+                <label><input type="radio" name="answer" value="3"> Une norme de sécurité</label><br>
+                <button id="valider-btn"  type="submit">Valider</button>
+        </form>
+    </div>
+</body>
+</html>

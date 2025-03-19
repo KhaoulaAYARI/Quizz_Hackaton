@@ -1,0 +1,125 @@
+/* Styles généraux */
+body {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: rgb(25, 60, 64);
+    background: linear-gradient(0deg, rgba(25, 60, 64, 1) 32%, rgba(27, 89, 78, 1) 100%);
+    color: white;
+
+    /* Centrer le contenu sur la page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Utiliser 100% de la hauteur de la fenêtre */
+    flex-direction: column; /* Organiser les éléments verticalement */
+}
+
+/* Styles pour le titre principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #44f2d2;
+    text-shadow: 2px 2px 10px white;
+    letter-spacing: 3px;
+}
+
+/* Styles pour le sous-titre */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #44f2d2;
+    text-shadow: 2px 2px 10px white;
+    letter-spacing: 2px;
+}
+
+/* Conteneur du concept */
+#concept-content {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Styles pour le titre de section */
+h3 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 20px;
+    color: #2b9380;
+    letter-spacing: 1px;
+}
+
+/* Styles pour les paragraphes */
+p {
+    text-align: center,justify;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Conteneur principal de chaque paragraphe */
+#p1-page {
+    text-align: center;
+    width: 70%;
+    max-width: 850px;
+    height: auto;
+    color: #2b9380;
+    border: 1px solid #44f2d2;
+    box-shadow: 2px 2px 20px white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-container {
+    display: flex;
+    gap: 15px; /* Espace entre les boutons */
+    justify-content: center; /* Centre les boutons */
+}
+
+.valider-btn {
+    background: #34aa95;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valider-btn:hover {
+    background:#254141;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.valider-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Centrer le contenu dans le body */
+#p1-page, #concept-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+

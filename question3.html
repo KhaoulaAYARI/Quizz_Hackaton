@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css"/>
+
+    <title>Question 3</title>
+</head>
+<body>
+    <div id="question-page">
+        <h1>Question 3</h1>
+        <p>Quelle est la principale source de pollution dans le secteur IT ?</p>
+        <form action="http://localhost/GreenITQuizz/ProjetQuizz/feedback.php" method="POST">
+            <input type="hidden" name="question" value="3">
+            <label><input type="radio" name="answer" value="1" required> Le transport des composants electroniques</label><br>
+            <label><input type="radio" name="answer" value="2"> La production de matériel informatique</label><br>
+            <label><input type="radio" name="answer" value="3"> Le recyclage des déchets</label><br>
+            <button id="valider-btn"  type="submit">Valider</button>
+        </form>
+    </div>
+</body>
+</html>

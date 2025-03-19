@@ -1,0 +1,75 @@
+/* Style général pour le corps */
+body {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(25, 60, 64);
+    background: linear-gradient(
+        0deg,
+        rgba(25, 60, 64, 1) 32%,
+        rgba(27, 89, 78, 1) 100%
+    );
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #44f2d2;
+    text-shadow: 1px 2px 5px white;
+    letter-spacing: 2px;
+}
+
+/* Texte explicatif */
+p {
+    /* font-size: 1.3em; */
+    font-size: 1.3em; 
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Conteneur principal de la page */
+#question-page {
+    font-size: 1.3em; 
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+    color: #2b9380;
+    border: 1px solid #44f2d2;
+    box-shadow: 2px 2px 20px white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Bouton Connexion (en forme circulaire) */
+#valider-btn {
+    margin-top: 5%;
+    width: 80px; /* Taille fixe pour éviter les déformations */
+    height: 80px; /* Taille fixe identique à la largeur */
+    border: 1px solid #44f2d2;
+    box-shadow: 2px 2px 15px white;
+    border-radius: 50%;
+    background-size: 40%; /* Ajuster la taille de l'icône */
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1; /* Maintenir un rapport carré */
+    margin-bottom: 20%;
+    background-color: #2b9380;
+}

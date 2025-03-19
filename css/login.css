@@ -1,0 +1,133 @@
+/* Style général pour le corps */
+body {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(25, 60, 64);
+    background: linear-gradient(
+        0deg,
+        rgba(25, 60, 64, 1) 32%,
+        rgba(27, 89, 78, 1) 100%
+    );
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #44f2d2;
+    text-shadow: 1px 2px 5px white;
+    letter-spacing: 2px;
+}
+
+/* Texte explicatif */
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Conteneur principal de la page */
+#login-page {
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+    color: #2b9380;
+    border: 1px solid #44f2d2;
+    box-shadow: 2px 2px 20px white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulaire */
+#loginForm {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Champs de saisie */
+input {
+    width: 100%;
+    max-width: 200px;
+    height: 15%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px #44f2d2;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    padding-left: 5%;
+}
+
+/* Placeholder (texte à l'intérieur des champs) */
+::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 2%;
+}
+
+/* Icône Home (Accueil) */
+#home-btn {
+    position: absolute;
+    background-image: url("../assets/Icons/house.svg");
+    top: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Icône Retour */
+#back-btn {
+    position: absolute;
+    background-image: url("../assets/Icons/arrow-left.svg");
+    top: 30px;
+    left: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Bouton Connexion (en forme circulaire) */
+#login-btn {
+    margin-top: 5%;
+    width: 80px; /* Taille fixe pour éviter les déformations */
+    height: 80px; /* Taille fixe identique à la largeur */
+    border: 1px solid #44f2d2;
+    box-shadow: 2px 2px 15px white;
+    border-radius: 50%;
+    background-size: 40%; /* Ajuster la taille de l'icône */
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1; /* Maintenir un rapport carré */
+    margin-bottom: 20%;
+    background-color: #2b9380;
+}

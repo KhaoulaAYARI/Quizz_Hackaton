@@ -1,0 +1,45 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header('Location: login.html');
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1>Bienvenue, <?php echo htmlspecialchars($_SESSION['username']); ?> !</h1>
+    <div id="quiz-container"></div>
+    <button id="submit-btn">Soumettre</button>
+    <p id="result"></p>
+    <a href="logout.php">Se déconnecter</a>
+    <h2>Tableau des scores</h2>
+    <table id="scores-table">
+        <thead>
+            <tr>
+                <th>Utilisateur</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $file = 'users.json';
+            $users = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
+            foreach ($users as $user) {
+                if (isset($user['score'])) {
+                    echo "<tr><td>" . htmlspecialchars($user['username']) . "</td><td>" . htmlspecialchars($user['score']) . "</td></tr>";
+                }
+            }
+            ?>
+        </tbody>
+    </table>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/question.css"/>
+
+    <title>Question 2</title>
+</head>
+<body>
+    <div id="question-page">
+        <h1>Question 2</h1>
+        <p>Quel est l'objectif principal du Green IT ?</p>
+        <form action="http://localhost/GreenITQuizz/ProjetQuizz/feedback.php" method="POST">
+            <input type="hidden" name="question" value="2">
+            <label><input type="radio" name="answer" value="1" required> Augmenter la vitesse de traitement des données</label><br>
+            <label><input type="radio" name="answer" value="2"> Réduire l'empreinte écologique</label><br>
+            <label><input type="radio" name="answer" value="3"> Améliorer la connexion</label><br>
+            <button id="valider-btn" type="submit">Valider</button>
+        </form>
+    </div>
+</body>
+</html>
